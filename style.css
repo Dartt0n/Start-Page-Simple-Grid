@@ -1,6 +1,18 @@
+@font-face {
+  font-family: HackRegular;
+  src: url('fonts/Hack\ Regular\ Nerd\ Font\ Complete\ Mono\ Windows\ Compatible.ttf');
+}
+
+@font-face {
+  font-family: HackBold;
+  src: url('fonts/Hack\ Bold\ Nerd\ Font\ Complete\ Mono\ Windows\ Compatible.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: HackRegular;
+  font-style: normal;
 }
 
 .container {
@@ -39,10 +51,20 @@
 h1 {
   color: #fff;
   font-size: 100px;
+  font-family: 'HackBold';
+  font-weight: normal;
 }
+
 h2 {
   color: #fff;
   font-size: 70px;
+  font-weight: normal;
+}
+
+h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+  font-family: 'HackBold';
 }
 
 p {
@@ -65,17 +87,15 @@ p {
   transition: transform 0.5s;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 a {
   text-decoration: none;
 }
+
 .card:hover {
   transform: translateY(-10px);
 }
 
-h5 {
-  color: #fff;
-  text-shadow: 0 0 5px #999;
-}
 
 .card p {
   text-shadow: 0 0 15px #000;
